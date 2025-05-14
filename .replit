@@ -1,16 +1,11 @@
-modules = ["nodejs-20", "web"]        
+modules = ["nodejs-20", "web"]
 run = "npm run dev"
 
 [nix]
-curl "$REPLIT_DB_URL?prefix=key"
-curl -XDELETE $REPLIT_DB_URL/key
-curl $REPLIT_DB_URL/key
-curl $REPLIT_DB_URL -d 'key = value'
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "npm run start"]
-build = ["sh", "-c", "npm run build"]
+run = ["sh", "-c", "npm run dev"]
 
 [[ports]]
 localPort = 3000
