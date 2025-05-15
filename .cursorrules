@@ -1,22 +1,22 @@
-You are an expert in TypeScript, Next.js App Router, React, and Tailwind. Follow @Next.js 14 App Router docs for Data Fetching, Rendering, and Routing. Use Vercel AI SDK for handling AI interactions and streaming responses.
+Você é um especialista em TypeScript, Next.js App Router, React e Tailwind. Siga a documentação do @Next.js 14 App Router para Busca de Dados, Renderização e Roteamento. Use o SDK de IA da Vercel para lidar com interações de IA e respostas em streaming.
 
-- All project files are saved in the /src folder. 
-  - src/app has the page.tsx and layout.tsx files
-  - src/app/api has the API routes
-  - src/app/components has all the React components
-  - src/app/lib has all the other code like helpers, hooks, and contexts
+- Todos os arquivos do projeto são salvos na pasta /src.
+  - src/app contém os arquivos page.tsx e layout.tsx
+  - src/app/api contém as rotas da API
+  - src/app/components contém todos os componentes React
+  - src/app/lib contém todo o outro código, como helpers, hooks e contextos
 
-There are some pre-configured APIs in this template that can be used but only if required by the current project. These have already been created:
+Existem algumas APIs pré-configuradas neste template que podem ser usadas, mas apenas se forem necessárias para o projeto atual. Estas já foram criadas:
 - Firebase
-  - In src/lib/firebase there is a firebase.ts configuration file as well as firebaseUtils.ts for various utility functions when interacting with Firebase Database, Storage, and Authencation
-  - In src/lib/contexts there is an AuthContext.tsx file that has user authentication with Firebase set up with the onAuthStateChanged listener.
-  - In src/lib/hooks there is a useAuth.ts hook
+  - Em src/lib/firebase há um arquivo de configuração firebase.ts, bem como firebaseUtils.ts para várias funções utilitárias ao interagir com o Banco de Dados, Armazenamento e Autenticação do Firebase
+  - Em src/lib/contexts há um arquivo AuthContext.tsx que tem a autenticação de usuário com Firebase configurada com o listener onAuthStateChanged.
+  - Em src/lib/hooks há um hook useAuth.ts
 - OpenAI 
-  - src/app/api/openai has chat/route.ts which is a simple API calling streamText from openai using the Vercel AI library
+  - src/app/api/openai tem chat/route.ts, que é uma API simples chamando streamText do openai usando a biblioteca Vercel AI
 - Anthropic
-  - src/app/api/anthropic has chat/route.ts which is a simple API calling streamText from Anthropic using the Vercel AI library
+  - src/app/api/anthropic tem chat/route.ts, que é uma API simples chamando streamText do Anthropic usando a biblioteca Vercel AI
 - Replicate
-  - src/app/api/replicate has generate-image/route.ts which is a simple API calling the Stable Diffusion model hosted on Replicate to generate images
+  - src/app/api/replicate tem generate-image/route.ts, que é uma API simples chamando o modelo Stable Diffusion hospedado no Replicate para gerar imagens
 - Deepgram
-  - src/app/api/deepgram has transcribe-audio/route.ts which is a simple API that returns the Deepgram API key to be used in the client side to transcribe audio in real-time.
-  - src/lib/contexts has a DeepgramContext.tsx file that has the Deepgram API key set up with the useDeepgram hook to be used in any component.
+  - src/app/api/deepgram tem transcribe-audio/route.ts, que é uma API simples que retorna a chave da API Deepgram para ser usada no lado do cliente para transcrever áudio em tempo real.
+  - src/lib/contexts tem um arquivo DeepgramContext.tsx que tem a chave da API Deepgram configurada com o hook useDeepgram para ser usado em qualquer componente.

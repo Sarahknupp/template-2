@@ -1,15 +1,15 @@
-# Ansh & Riley Full-Stack Template
+# Template Criador Digital
 
-This is a full-stack template project for Software Composers to create  applications with AI.
+Este é um projeto de template full-stack para Criadores Digitais criarem aplicações com IA.
 
-## Getting started
-To create a new project, you go to `/paths`, choose from our list of Paths, and then use Cursor's Composer feature to quickly scaffold your project!
+## Começando
+Para criar um novo projeto, vá para `/paths`, escolha uma das opções de Paths e use o recurso Composer do Cursor para rapidamente criar a estrutura do seu projeto!
 
-You can also edit the Path's prompt template to be whatever you like!
+Você também pode editar o template do prompt do Path para ser o que você quiser!
 
-## Technologies used
-This doesn't really matter, but is useful for the AI to understand more about this project. We are using the following technologies
-- React with Next.js 14 App Router
+## Tecnologias utilizadas
+Isso realmente não importa muito, mas é útil para a IA entender mais sobre este projeto. Estamos usando as seguintes tecnologias:
+- React com Next.js 14 App Router
 - TailwindCSS
-- Firebase Auth, Storage, and Database
-- Multiple AI endpoints including OpenAI, Anthropic, and Replicate using Vercel's AI SDK
+- Firebase Auth, Storage e Database
+- Múltiplos endpoints de IA, incluindo OpenAI, Anthropic e Replicate usando o SDK de IA do Vercel

@@ -1,24 +1,21 @@
-# Voice Notes App
+# Aplicativo de Notas de Voz
 
-## Path system prompt:
-You are an expert in TypeScript, Next.js App Router, React, and Tailwind. Follow @Next.js docs for Data Fetching, Rendering, and Routing. 
+## Prompt do sistema para o caminho:
+Você é um especialista em TypeScript, Next.js App Router, React e Tailwind. Siga a documentação do @Next.js para Busca de Dados, Renderização e Roteamento.
 
+## Descrição do aplicativo:
+Quero criar um aplicativo de anotações baseado em voz.
 
-## App description:
-I want to create a voice-based note-taking app. 
+## Fluxo e funcionalidade do aplicativo:
 
+O fluxo do aplicativo é o seguinte:
+- O usuário abre o aplicativo, e há um botão de play/iniciar para começar a gravar sua voz.
+- Quando o usuário clica no botão, ele pede permissão para acessar o microfone.
+- Se o usuário permitir, o aplicativo começa a gravar e o botão muda para um botão de parar.
+- Quando o usuário clica no botão de parar, o aplicativo interrompe a gravação e transcreve a nota de voz usando a API de voz em tempo real da Deepgram.
+- Enquanto o usuário está falando, há uma animação limpa e simples na tela junto com a transcrição em tempo real da nota de voz.
+- O usuário pode clicar no botão de parar para interromper a gravação.
+- Depois que terminar de gravar, a nota é automaticamente salva com a data, hora e a transcrição da nota de voz no banco de dados Firestore do Firebase.
+- Agora, o aplicativo exibe a nota em uma lista de todas as notas na tela inicial.
 
-## App flow and functionality:
-
-The flow of the app is as follows:
-- User opens the app, and there is a play/start button to start recording your voice.
-- When the user clicks on the button, it asks for permission to access the microphone.
-- If the user clicks allow, the app starts recording and the button changes to a stop button.
-- When the user clicks on the stop button, the app stops recording and transcribes the voice note using the Deepgram real-time voice API.
-- While the user is speaking, there is a clean, simple animation on the screen along with the realtime transcription of the voice note.
-- The user can click the stop button to stop the recording.
-- After ther is done recording, the note is automatically saved with the date, time, and the transcription of the voice note into the Firebase Firestore database.
-- Now, the app displays the note in a list of all notes on the home screen.
-
-
-This application is set-up with existing configuration for Deepgram APIs and Firebase. Implement all the functionality in the flow above while using the existing codebase as a starting point, but fully modify the codebase to fit the flow and functionality described above.
+Este aplicativo está configurado com uma configuração existente para as APIs Deepgram e Firebase. Implemente toda a funcionalidade no fluxo acima, usando a base de código existente como ponto de partida, mas modifique completamente a base de código para se adequar ao fluxo e à funcionalidade descritos acima.

@@ -1,62 +1,62 @@
-# AI Chat App
+# Aplicativo de Chat com IA
 
-You are an expert in TypeScript, Next.js App Router, React, and Tailwind. Follow @Next.js docs for Data Fetching, Rendering, and Routing. Use Vercel AI SDK for handling AI interactions and streaming responses.
+Você é um especialista em TypeScript, Next.js App Router, React e Tailwind. Siga a documentação do @Next.js para Busca de Dados, Renderização e Roteamento. Use o SDK de IA da Vercel para lidar com interações de IA e respostas em streaming.
 
-Your job is to create an AI chat application with the following specific features and key points to implement:
+Seu trabalho é criar um aplicativo de chat com IA com as seguintes características específicas e pontos-chave para implementar:
 
-1. Integration with Vercel AI SDK:
-   - Implement the Vercel AI SDK to handle all AI-related operations.
-   - Use the SDK's built-in functions for creating chat completions and managing conversation state.
+1. Integração com o SDK de IA da Vercel:
+   - Implemente o SDK de IA da Vercel para lidar com todas as operações relacionadas à IA.
+   - Use as funções integradas do SDK para criar completions de chat e gerenciar o estado da conversa.
 
-2. Support for OpenAI and Anthropic AI models:
-   - Integrate both OpenAI's GPT models (gpt-4o) and Anthropic's claude 3.5 sonnet.
-   - Implement model-specific configurations and API calls for each provider.
+2. Suporte para modelos de IA OpenAI e Anthropic:
+   - Integre tanto os modelos GPT da OpenAI (gpt-4o) quanto o claude 3.5 sonnet da Anthropic.
+   - Implemente configurações e chamadas de API específicas para cada provedor.
 
-3. Model selection toggle:
-   - Create a user-friendly toggle or dropdown menu in the UI to switch between OpenAI and Anthropic models.
-   - Ensure the selected model persists across page reloads using local storage.
+3. Alternância de seleção de modelo:
+   - Crie um menu de alternância ou dropdown amigável na interface do usuário para alternar entre os modelos OpenAI e Anthropic.
+   - Garanta que o modelo selecionado persista entre recarregamentos de página usando armazenamento local.
 
-4. Real-time chat interface:
-   - Develop a responsive chat UI with a scrollable message list, displaying user and AI messages.
-   - Implement a fixed-position input field at the bottom of the chat interface.
-   - Display the entire chat history, including previous conversations if applicable.
+4. Interface de chat em tempo real:
+   - Desenvolva uma interface de chat responsiva com uma lista de mensagens rolável, exibindo mensagens do usuário e da IA.
+   - Implemente um campo de entrada com posição fixa na parte inferior da interface de chat.
+   - Exiba todo o histórico de chat, incluindo conversas anteriores, se aplicável.
 
-5. Streaming responses:
-   - Utilize the Vercel AI SDK's streaming capabilities to display AI responses in real-time.
-   - Implement a typing indicator while the AI is generating a response.
+5. Respostas em streaming:
+   - Utilize as capacidades de streaming do SDK de IA da Vercel para exibir respostas da IA em tempo real.
+   - Implemente um indicador de digitação enquanto a IA está gerando uma resposta.
 
-6. Comprehensive error handling and loading states:
-   - Create informative error messages for various scenarios (e.g., API errors, network issues).
-   - Implement loading spinners or skeleton loaders for all asynchronous operations.
-   - Add retry mechanisms for failed API calls.
+6. Tratamento abrangente de erros e estados de carregamento:
+   - Crie mensagens de erro informativas para vários cenários (por exemplo, erros de API, problemas de rede).
+   - Implemente spinners de carregamento ou loaders de esqueleto para todas as operações assíncronas.
+   - Adicione mecanismos de retry para chamadas de API que falharem.
 
-7. API route update:
-   - Modify the existing API route to support both OpenAI and Anthropic models.
-   - Implement logic to route requests to the appropriate AI provider based on the user's selection.
-   - Ensure proper error handling and response formatting for both providers.
+7. Atualização da rota da API:
+   - Modifique a rota da API existente para suportar modelos OpenAI e Anthropic.
+   - Implemente lógica para rotear solicitações para o provedor de IA apropriado com base na seleção do usuário.
+   - Garanta o tratamento adequado de erros e formatação de resposta para ambos os provedores.
 
-8. Chat history management:
-   - Implement a robust system to maintain and display the chat history correctly.
-   - Store chat history in the browser's local storage or a database for persistence across sessions.
-   - Provide options to clear chat history or start a new conversation.
+8. Gerenciamento do histórico de chat:
+   - Implemente um sistema robusto para manter e exibir corretamente o histórico do chat.
+   - Armazene o histórico do chat no armazenamento local do navegador ou em um banco de dados para persistência entre sessões.
+   - Forneça opções para limpar o histórico do chat ou iniciar uma nova conversa.
 
-9. Vercel AI SDK integration for interactions and streaming:
-   - Utilize the SDK's built-in hooks (e.g., useChat, useCompletion) for managing chat state and interactions.
-   - Implement server-side streaming using the SDK's StreamingTextResponse for efficient response handling.
+9. Integração do SDK de IA da Vercel para interações e streaming:
+   - Utilize os hooks integrados do SDK (por exemplo, useChat, useCompletion) para gerenciar o estado do chat e interações.
+   - Implemente streaming do lado do servidor usando o StreamingTextResponse do SDK para manipulação eficiente de respostas.
 
-10. Enhanced user experience:
-    - Add a "Stop generating" button to halt ongoing AI responses.
-    - Implement markdown rendering for AI responses to support formatted text, code blocks, and lists.
-    - Add a copy-to-clipboard feature for individual messages.
+10. Experiência do usuário aprimorada:
+    - Adicione um botão "Parar geração" para interromper respostas em andamento da IA.
+    - Implemente renderização de markdown para respostas da IA para suportar texto formatado, blocos de código e listas.
+    - Adicione um recurso de copiar para a área de transferência para mensagens individuais.
 
-Use the existing OpenAI configuration and Vercel AI SDK functions from the codebase. Implement the AI chat functionality in new page components for the chat interface. Create all necessary components for the user interface and AI interactions, including but not limited to:
-- ChatInterface component for the main chat UI
-- MessageList component to display chat messages
-- InputField component for user input
-- ModelSelector component for switching between AI providers
-- ErrorDisplay component for showing error messages
-- LoadingIndicator component for asynchronous operations
+Use a configuração existente da OpenAI e as funções do SDK de IA da Vercel da base de código. Implemente a funcionalidade de chat com IA em novos componentes de página para a interface de chat. Crie todos os componentes necessários para a interface do usuário e interações com IA, incluindo, mas não se limitando a:
+- Componente ChatInterface para a interface principal do chat
+- Componente MessageList para exibir mensagens do chat
+- Componente InputField para entrada do usuário
+- Componente ModelSelector para alternar entre provedores de IA
+- Componente ErrorDisplay para exibir mensagens de erro
+- Componente LoadingIndicator para operações assíncronas
 
-Update the existing API route to support both OpenAI and Anthropic models, ensuring proper error handling and response formatting for each provider.
+Atualize a rota da API existente para suportar modelos OpenAI e Anthropic, garantindo o tratamento adequado de erros e formatação de resposta para cada provedor.
 
-Remember to use TypeScript for type safety, including proper type definitions for all components, functions, and API responses. Utilize Tailwind CSS for responsive and consistent styling across the application. Leverage Next.js App Router for efficient routing and data fetching, implementing server-side rendering or static generation where appropriate to optimize performance.
+# Estrutura do Projeto

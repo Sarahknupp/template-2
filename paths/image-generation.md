@@ -1,29 +1,29 @@
-# AI Image Generation App
+# Aplicativo de Geração de Imagens com IA
 
-You are an expert in TypeScript, Next.js App Router, React, and Tailwind. Follow @Next.js docs for Data Fetching, Rendering, and Routing.
+Você é um especialista em TypeScript, Next.js App Router, React e Tailwind. Siga a documentação do @Next.js para Busca de Dados, Renderização e Roteamento.
 
-Your job is to create an AI image generation application with the following specific features:
-1. A user-friendly interface with a text input field for entering detailed image prompts
-2. Integration with the Replicate API, specifically using the Stable Diffusion model for image generation
-3. Real-time display of generated images with clear loading indicators and progress updates
-4. Comprehensive error handling for API requests, including user-friendly error messages
-5. High-quality image download functionality with options for different resolutions (e.g., 512x512, 1024x1024)
-6. A paginated gallery of previously generated images, stored locally using browser storage
-7. Image metadata display, including prompt used, generation date, and model version
-8. Advanced options for image generation, such as negative prompts and sampling methods
-9. Responsive design that works seamlessly on desktop, tablet, and mobile devices
+Seu trabalho é criar um aplicativo de geração de imagens com IA com as seguintes características específicas:
+1. Uma interface amigável com um campo de entrada de texto para inserir prompts detalhados de imagem
+2. Integração com a API do Replicate, especificamente usando o modelo Stable Diffusion para geração de imagens
+3. Exibição em tempo real de imagens geradas com indicadores claros de carregamento e atualizações de progresso
+4. Tratamento abrangente de erros para solicitações de API, incluindo mensagens de erro amigáveis ao usuário
+5. Funcionalidade de download de imagens de alta qualidade com opções para diferentes resoluções (por exemplo, 512x512, 1024x1024)
+6. Uma galeria paginada de imagens geradas anteriormente, armazenadas localmente usando o armazenamento do navegador
+7. Exibição de metadados da imagem, incluindo o prompt usado, data de geração e versão do modelo
+8. Opções avançadas para geração de imagens, como prompts negativos e métodos de amostragem
+9. Design responsivo que funciona perfeitamente em dispositivos desktop, tablet e móveis
 
-Use the existing Replicate API configuration and utility functions from the codebase. Implement the image generation functionality in new page components for the prompt input, image display, and image history. Create all necessary components for the user interface and image interactions. Replace any existing code in the codebase to transform it into a fully-featured AI image generation application.
+Use a configuração existente da API do Replicate e funções utilitárias da base de código. Implemente a funcionalidade de geração de imagens em novos componentes de página para a entrada de prompt, exibição de imagem e histórico de imagens. Crie todos os componentes necessários para a interface do usuário e interações com imagens. Substitua qualquer código existente na base de código para transformá-lo em um aplicativo de geração de imagens com IA totalmente funcional.
 
-Key points to implement:
-1. Create a form component with a textarea for detailed prompt input and additional fields for advanced options
-2. Implement API calls to Replicate, specifically for the Stable Diffusion model, handling all required parameters
-3. Develop a real-time progress indicator for image generation, updating the user on each step
-4. Display generated images in a responsive grid layout with options to view full-size
-5. Implement a robust error handling system with specific error messages for different types of failures (e.g., API errors, network issues)
-6. Add a download button for generated images with options for different resolutions
-7. Create a paginated gallery view for previously generated images, storing data in localStorage or IndexedDB
-8. Develop a detailed image info modal showing all metadata related to the generation process
-9. Ensure the entire application is fully responsive, with a mobile-first approach to design
+Pontos-chave para implementar:
+1. Crie um componente de formulário com uma área de texto para entrada detalhada de prompt e campos adicionais para opções avançadas
+2. Implemente chamadas de API para o Replicate, especificamente para o modelo Stable Diffusion, lidando com todos os parâmetros necessários
+3. Desenvolva um indicador de progresso em tempo real para a geração de imagens, atualizando o usuário em cada etapa
+4. Exiba imagens geradas em um layout de grade responsivo com opções para visualizar em tamanho completo
+5. Implemente um sistema robusto de tratamento de erros com mensagens de erro específicas para diferentes tipos de falhas (por exemplo, erros de API, problemas de rede)
+6. Adicione um botão de download para imagens geradas com opções para diferentes resoluções
+7. Crie uma visualização de galeria paginada para imagens geradas anteriormente, armazenando dados no localStorage ou IndexedDB
+8. Desenvolva um modal detalhado de informações da imagem mostrando todos os metadados relacionados ao processo de geração
+9. Garanta que todo o aplicativo seja totalmente responsivo, com uma abordagem mobile-first para o design
 
-Remember to use TypeScript for strict type checking, Tailwind CSS for consistent and responsive styling, and Next.js App Router for efficient routing and server-side rendering where appropriate. Implement proper loading states, skeleton loaders, and transitions for a smooth user experience.
+Lembre-se de usar TypeScript para verificação estrita de tipos, Tailwind CSS para estilização consistente e responsiva, e Next.js App Router para roteamento eficiente e renderização do lado do servidor onde apropriado. Implemente estados de carregamento adequados, loaders de esqueleto e transições para uma experiência de usuário suave.
